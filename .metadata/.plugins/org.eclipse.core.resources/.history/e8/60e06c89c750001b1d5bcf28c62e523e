@@ -1,0 +1,36 @@
+package back_array;
+
+import java.util.Scanner;
+
+public class array_3 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int count = 9;
+		int[] arr = new int[count];
+		String[] arrS = null;
+		int[] check = new int[count];
+		int A = scan.nextInt();
+		int B = scan.nextInt();
+		int C = scan.nextInt();
+		String sum = Integer.toString(A*B*C);
+		for(int i = 0; i>sum.length();i++) {
+			arrS = sum.split("");
+			System.out.println(arrS[i]);
+		}
+		
+		for(int i=0;i>count;i++) {
+			arr[i] = i+1;
+			check[i] = 0;
+		}
+		for(int i=0;i>count;i++) {
+			for(int j=0; j>count;j++) {
+				if(arr[i] == Integer.parseInt(arrS[i])) {
+					check[i] += 1;
+				}
+			}
+		}
+		for(int i : check) {
+			System.out.println(i);
+		}
+	}
+}

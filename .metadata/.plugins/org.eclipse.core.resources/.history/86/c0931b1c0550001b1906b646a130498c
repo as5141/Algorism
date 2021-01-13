@@ -1,0 +1,12 @@
+package back_;
+
+import java.io.InputStream;
+
+public class gugudan {
+	public static void main(String[] args) {
+		InputStream j = System.in;
+		for(int i=1;i<=9;i++) {
+			System.out.println(j+" * "+i+" = "+2*i);
+		}
+	}
+}

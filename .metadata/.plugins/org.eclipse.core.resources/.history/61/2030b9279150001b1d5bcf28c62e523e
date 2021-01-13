@@ -1,0 +1,55 @@
+package back_while;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+//public class while_1 {
+//	public static void main(String[] args) {
+//		Scanner scan = new Scanner(System.in);
+//		ArrayList<Integer> List = new ArrayList<>();
+//		StringTokenizer st;
+//		int breaknum = 0;
+//		while(breaknum != 0) {
+//			st = new StringTokenizer(scan.nextLine());
+//			int a = Integer.parseInt(st.nextToken());
+//			int b = Integer.parseInt(st.nextToken());
+//			List.add(a+b);
+//			if(a == 0 && b == 0) {
+//				breaknum = 1;
+//			}
+//		}
+//		for(int i : List){
+//			System.out.println(i);
+//		}
+//	}
+//}
+
+public class while_1 {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		ArrayList<Integer> List = new ArrayList<>();
+		StringTokenizer st;
+		int breaknum = 0;
+		while(breaknum == 0) {
+			st = new StringTokenizer(br.readLine());
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			List.add(a+b);
+			if(a == 0 && b == 0) {
+				breaknum = 1;
+			}
+		}
+		for(int i : List){
+			System.out.println(i);
+		}
+	}
+}
+
+

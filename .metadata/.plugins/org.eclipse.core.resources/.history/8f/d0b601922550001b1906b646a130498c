@@ -1,0 +1,25 @@
+package back_for;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class for_7 {
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		ArrayList<Integer> sum = new ArrayList<>();
+		StringTokenizer st;
+		int count = scan.nextInt();
+		for(int i=0;i<count;i++) {
+			st = new StringTokenizer(scan.nextLine());
+			int ab_sum = (Integer.parseInt(st.nextToken())) +(Integer.parseInt(st.nextToken()));
+			sum.add(ab_sum);
+		}
+		for(int i : sum) {
+			System.out.println(i);
+		}
+	}
+}
