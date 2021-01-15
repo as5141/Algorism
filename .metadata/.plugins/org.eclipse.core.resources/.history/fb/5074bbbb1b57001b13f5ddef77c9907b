@@ -1,0 +1,18 @@
+package back_6fun;
+
+import java.util.Scanner;
+
+public class fun_1 {
+	Scanner scan = new Scanner(System.in);
+	int cou = scan.nextInt();
+	int[] b = new int[cou];
+	int i =0;
+	
+	for(i=0;i<b.length;i++) {
+		
+	}
+	//해당 Test만 문제 풀이
+}
+
+
+

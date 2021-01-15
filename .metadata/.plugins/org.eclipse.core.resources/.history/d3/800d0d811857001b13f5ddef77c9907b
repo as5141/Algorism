@@ -1,0 +1,26 @@
+package back_6function;
+
+import java.util.Scanner;
+
+public class function_1 {
+	Scanner scan = new Scanner(System.in);
+	
+	int cou = scan.nextInt();
+	int[] arr = new int[cou];
+	for(int i=0; i<b.length; i++) {
+		arr[i] = scan.nextInt();
+	}
+	System.out.println(sum);
+	//해당 Test만 문제 풀이
+	class Test{
+		long sum (int[] a) {
+			int sum = 0;
+			
+			for(int i=0; i<a.length; i++) {
+				sum += a[i];
+			}
+			
+			return sum;
+		}
+	}
+}

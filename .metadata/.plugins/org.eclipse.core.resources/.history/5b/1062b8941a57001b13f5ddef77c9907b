@@ -1,0 +1,19 @@
+package back_6fun;
+
+import java.util.Scanner;
+
+public class fun_1 {
+	Scanner scan = new Scanner(System.in);
+	int cou = scan.nextInt();
+	int[] arr = new int[cou];
+	
+	for(int i=0; i<arr.length; i++) {
+		arr[i] = scan.nextInt();
+	}
+	System.out.println(sum);
+	//해당 Test만 문제 풀이
+	scan.close();
+}
+
+
+
